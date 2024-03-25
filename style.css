@@ -89,23 +89,25 @@ nav {
 
 
 .text-content {
-    border: 1px solid red;
-    width: 50%;
-    height: 540px;
-    /* padding-right: 20px; */
-    /* align-self: flex-start; */
-    /* height: 300px; */
-    /* display: inline-block; */
-    /* justify-content: center; */
-    /* margin-left: 250px; */
-    /* margin-right: 50px; */
+    border: 1px solid red;  
+    margin-bottom: 100px;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-content h2,
+.text-content p,
+.text-content .buttons {
+    flex: 1;
 }
 
 .text-content h2 {
-    margin-bottom: 400px;
+    padding-right: 80px;
     line-height: 1.05;
-    /* margin-top: 20px; */
-    margin-bottom: 15px;
     font-weight: 700;
     cursor: default;
     font-size: 80px;
@@ -117,11 +119,10 @@ nav {
     cursor: default;
     position: relative;
     margin-top: 110px;
-    /* margin-bottom: 40px; */
-    /* margin-left: 19px; */
     font-size: 32px;
     line-height: 1.45;
     max-width: 850px;
+    text-align: justify;
     color: rgb(107, 106, 106);
     /* border: 1px solid red; */
 }
@@ -149,18 +150,46 @@ nav {
     justify-content: space-between;
 }
 
+.download-2btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 60px;
+    width: 210px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 100px;
+    background-color: rgb(47, 255, 224);
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.download-2btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-2btn:hover {
+    transform: scale(1.05);
+}
+
+.Watch-tour {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 100px;
+}
+
+.Watch-tour a {
+    text-decoration: none;
+    color: rgb(47, 255, 224);
+}
+ 
 .content video {
-    /* max-width: 400px; */
-    /* height: auto; */
     position: relative;
     top: 0;
     left: 0;
     margin-right: 30px;
-    /* padding-right: 0; */
-    /* width: 100%; */
-    /* height: 100%; */
     object-fit: cover;
-    /* margin-top: 20px; */
 }
 
 .content video::-webkit-media-controls {
@@ -169,4 +198,9 @@ nav {
 
 .content video::-webkit-media-controls-enclosure {
     display: none !important;
+}
+
+.section-2 {
+    background-color: whitesmoke;
+    margin-top: 500px ;
 }
