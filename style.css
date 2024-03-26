@@ -89,7 +89,6 @@ nav {
 
 
 .text-content {
-    border: 1px solid red;  
     margin-bottom: 100px;
     width: 600px;
     height: 100%;
@@ -99,6 +98,8 @@ nav {
     align-items: center;
 }
 
+
+
 .text-content h2,
 .text-content p,
 .text-content .buttons {
@@ -106,7 +107,7 @@ nav {
 }
 
 .text-content h2 {
-    padding-right: 80px;
+    padding-right: 100px;
     line-height: 1.05;
     font-weight: 700;
     cursor: default;
@@ -118,13 +119,13 @@ nav {
 .text-content p {
     cursor: default;
     position: relative;
-    margin-top: 110px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 32px;
     line-height: 1.45;
     max-width: 850px;
     text-align: justify;
     color: rgb(107, 106, 106);
-    /* border: 1px solid red; */
 }
 
 .container {
@@ -134,7 +135,6 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 .content {
@@ -144,7 +144,6 @@ nav {
     max-width: 70%;
     height: auto;
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -152,13 +151,12 @@ nav {
 
 .download-2btn {
     border: none;
-    padding: 10px 20px;
     border-radius: 50px;
     height: 60px;
     width: 210px;
     font-size: 25px;
-    font-weight: bold;
-    margin-right: 100px;
+    font-weight: bolder;
+    margin-right: 30px;
     background-color: rgb(47, 255, 224);
     cursor: pointer;
     transition: transform 0.3s ease; 
@@ -176,12 +174,16 @@ nav {
 .Watch-tour {
     font-size: 25px;
     font-weight: bolder;
-    margin-right: 100px;
-}
-
-.Watch-tour a {
+    cursor: pointer;
     text-decoration: none;
     color: rgb(47, 255, 224);
+    transition: transform 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 220px;
 }
  
 .content video {
@@ -203,4 +205,40 @@ nav {
 .section-2 {
     background-color: whitesmoke;
     margin-top: 500px ;
+}
+
+.screenshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot img {
+    width: 86%;
+}
+
+.text-2content h2{
+    margin-bottom: 1px;
+    line-height: 1.05;
+    font-weight: 700;
+    cursor: default;
+    font-size: 80px;
+    white-space: nowrap;
+    color: rgb(59, 59, 59);
+}
+
+.text-2content p {
+    margin-bottom: 50px;
+    cursor: default;
+    position: relative; 
+    font-size: 32px;
+    line-height: 1.45;
+    max-width: 890px;
+    color: rgb(107, 106, 106);
+}
+
+.text-2content {
+    margin-right: 215px;
+    width: 1100px;
 }
