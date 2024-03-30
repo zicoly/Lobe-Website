@@ -9,52 +9,83 @@
 </head>
 <body>
 
-    <section>
-        <header>
+    <header>
             <nav>
                 <div class="logo">
                     <h1>lobe</h1>
                     <img src="./Image/logo/lobe.png"    alt="Logo">
                 </div>
                 <ul class="navbar">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Examples</a></li>
-                    <li><a href="#">Tour</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="#" onclick="loadPage('overview')">Overview</a></li>
+                    <li><a href="#" onclick="loadPage('examples')">Examples</a></li>
+                    <li><a href="#" onclick="loadPage('tour')">Tour</a></li>
+                    <li><a href="#" onclick="loadPage('blog')">Blog</a></li>
+                    <li><a href="#" onclick="loadPage('help')">Help</a></li>
                 </ul>
                 <button class="download-btn"><a href="#">Download</a></button>
             </nav>
-        </header>
-    </section>
+    </header>
 
-    <section>
-        <div class="container">
-            <div class="content">
-                <div class="text-content">
-                    <h2>Train apps to</h2>
-                    <p>Lobe helps you train machine learning models with a free, easy to use tool.</p>
-                    <div class="buttons">
-                      <button class="download-2btn"><a href="#">Download</a></button>
-                    <a class="Watch-tour" href="https://youtu.be/Mdcw3Sb98DA">Watch Tour</a>
+    <main>
+        <div class="main-content">
+            <!-- Content will be loaded dynamically here -->
+        </div>
+    </main>
+
+    
+    <div class="container-2">
+        <section class="section-3">
+            <div class="text-3content">
+                <h2>Train your app with Lobe</h2>
+                <button class="download-2btn"><a href="#">Download</a></button>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo-2">
+                        <h3>lobe</h3>
+                        <img src="./Image/logo/lobe.png"    alt="Logo">
                     </div>
-                </div>                  
-                <video autoplay loop muted>
-                        <source src="./video/Video showing examples of ways to use Lobe to easily create machine learning models_.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                </video>
+                    <p>A product by Microsoft.<br><br>All rights reserved.<br><br>&copy; Microsoft 2021</p>
+                </div>
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>General</h3>
+                    <ul>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">Licence</a></li>
+                        <li><a href="#">Press Inquiry</a></li>
+                        <li><a href="#">Press Images</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.reddit.com/r/Lobe/" class="reddit-icon" target="_blank"><img src="./Icons/icons8-reddit-100.png" alt="Reddit icon by Icons8"></a>
+                    <a href="https://twitter.com/lobe_ai" class="twitter-icon" target="_blank"><img src="./Icons/icons8-twitterx-100.png" alt="Twitter icon by Icons8"></a>
+                    <a href="https://www.youtube.com/channel/UCYryctkBIcCszPAFg79rwAw" class="youtube-icon" target="_blank"><img src="./Icons/icons8-youtube-100.png" alt="YouTube icon by Icons8"></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </footer>
+    </div>
 
-    <section class="section-2">
-        <div class="screenshot">
-            <div class="text-2content">
-                <h2>Machine learning <br> made <span style="color: rgb(47, 255, 224);">easy</span></h2>
-                <p>Lobe has everything you need to bring your machine learning ideas to life. Just show it examples of what you want it to learn, and it automatically trains a custom machine learning model that can be shipped in your app.</p>
-            </div>
-            <img src="./Image/logo/screenshot.jpg" alt="">
-        </div>
-    </section>
+    <script src="./App.js"></script>
 </body>
 </html>
