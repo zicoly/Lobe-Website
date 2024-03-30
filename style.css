@@ -1,0 +1,383 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+.logo {
+    margin-left: 75px;
+    width: 110px;
+    display: flex;
+}
+
+.logo img {
+    margin-left: 5px;
+    margin-top: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+.download-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 60px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.download-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+.navbar li:hover {
+    transform: scale(1.05);
+}
+
+
+.text-content {
+    margin-bottom: 100px;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.text-content h2,
+.text-content p,
+.text-content .buttons {
+    flex: 1;
+}
+
+.text-content h2 {
+    padding-right: 100px;
+    line-height: 1.05;
+    font-weight: 700;
+    cursor: default;
+    font-size: 80px;
+    white-space: nowrap;
+    color: rgb(59, 59, 59);
+}
+
+.text-content p {
+    cursor: default;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 1.45;
+    max-width: 850px;
+    text-align: justify;
+    color: rgb(107, 106, 106);
+}
+
+.container {
+    height: 30px;
+    margin-top: 510px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-2btn {
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 210px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 30px;
+    background-color: rgb(47, 255, 224);
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.download-2btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-2btn:hover {
+    transform: scale(1.05);
+}
+
+.Watch-tour {
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(47, 255, 224);
+    transition: transform 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 220px;
+}
+ 
+.content video {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.content video::-webkit-media-controls {
+    display: none !important;
+}
+
+.content video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.section-2 {
+    background-color: whitesmoke;
+    margin-top: 500px;
+}
+
+.screenshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot img {
+    width: 86%;
+}
+
+.text-2content h2{
+    margin-bottom: 1px;
+    line-height: 1.05;
+    font-weight: 700;
+    cursor: default;
+    font-size: 80px;
+    white-space: nowrap;
+    color: rgb(59, 59, 59);
+}
+
+.text-2content p {
+    margin-bottom: 50px;
+    cursor: default;
+    /* position: relative;  */
+    font-size: 32px;
+    line-height: 1.45;
+    max-width: 890px;
+    color: rgb(107, 106, 106);
+}
+
+.text-2content {
+    margin-right: 215px;
+    width: 1100px;
+}
+
+/* text-3content */
+.section-3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.text-3content {
+    margin-bottom: 1px;
+    line-height: 1.05;
+    font-weight: 700;
+    cursor: default;
+    font-size: 50px;
+    width: 600px;
+    color: rgb(59, 59, 59);
+}
+
+.text-3content button {
+    font-size: 20px;
+}
+
+/* footer styling */
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0 auto;
+}
+
+footer {
+    background-color: #fff;
+    color: rgb(79, 79, 79);
+    padding: 50px 0;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-top: 1px solid rgb(182, 181, 181);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 auto;
+    text-align: justify;
+    margin-right: 0;
+}
+
+.footer-column h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.logo-2 {
+    width: 110px;
+    display: flex;
+}
+
+.logo-2 img {
+    margin-left: 5px;
+    margin-top: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.logo-2 h3 {
+    font-size: 32px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.logo-2 img {
+    margin-top: 1px;
+}
+
+.footer-column p {
+    color: rgb(107, 106, 106);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.footer-column ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer-column ul li {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-column ul li:hover {
+    transform: scale(1.03);
+}
+
+.footer-column ul li a {
+    color: rgb(107, 106, 106);
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-bottom: 220px;
+    margin-right: 50px;
+}
+
+.social-icons a {
+    margin: 0 auto;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
