@@ -1,0 +1,84 @@
+.body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download-btn {
+    background-color: rgb(47, 255, 224);
+}
+
+.content h2 {
+    padding-right: 100px;
+    margin-bottom: 0;
+    line-height: 1.05;
+    font-weight: 700;
+    cursor: default;
+    font-size: 80px;
+    white-space: nowrap;
+    color: rgb(59, 59, 59)
+}
+
+.content p {
+    cursor: default;
+    position: relative;
+    font-size: 32px;
+    line-height: 1.45;
+    max-width: 750px;
+    color: rgb(107, 106, 106);
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.video-card {
+    width: 35%;
+    margin: 30px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.video-info h2 {
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    margin-bottom: 2px;
+    text-align: start;
+}
+
+.video-info p {
+    cursor: default;
+    position: relative;
+    margin: 5px;
+    font-size: 25px;
+    line-height: 1.45;
+    text-align: start;
+    max-width: 530px;
+    color: rgb(107, 106, 106);
+}
