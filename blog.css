@@ -1,0 +1,42 @@
+.photo-card {
+    width: 35%;
+    margin: 30px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 5px 20px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: scale(1.02);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-info {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.photo-info h2 {
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+    margin-bottom: 2px;
+    text-align: start;
+}
+
+.photo-info P {
+    cursor: default;
+    position: relative;
+    margin: 5px;
+    font-size: 25px;
+    line-height: 1.45;
+    text-align: start;
+    max-width: 530px;
+    color: rgb(107, 106, 106);
+}
