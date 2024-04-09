@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.content p {
+  font-size: 22px;
+  width: 600px;
+}
+
+.combo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar {
+  margin-top: 30px;
+  margin-left: 500px;
+  height: 100%;
+  width: 200px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 10px;
+  display: block;
+  color: #444;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: rgb(4, 221, 178);
+  border-radius: 50px;
+}
+
+/* Double spacing between "Tips" and "Community" */
+.sidebar a:nth-child(8) {
+  margin-bottom: 20px;
+}
+
+.collapsible {
+  cursor: pointer;
+  height: 100px;
+  padding: 18px;
+  width: 60%;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid rgb(166, 164, 164);
+  outline: none;
+  background-color: white;
+  color: #444;
+  transition: background-color 0.3s;
+}
+
+.collapsible a {
+  text-decoration: none;
+  color: #444;
+}
+
+.contains {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  top: 0;
+  margin-top: 30px;
+  margin-right: 500px;
+  width: 500px;
+  flex-grow: 1;
+}
+
+.contain {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.collapsible.active,
+.collapsible:hover {
+  background-color: #ddd;
+}
+
+.arrow::after {
+  content: "\25BC";
+  font-size: 12px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active .arrow::after {
+  content: "\25B2";
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    margin-left: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  .contains {
+    margin: 0;
+  }
+
+  .collapsible {
+    width: 350px;
+  }
+}
