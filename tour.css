@@ -1,26 +1,60 @@
 .tour_video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tour_video a {
-    display: block;
-    width: 1320px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    transition: transform 0.3s ease, box-shadow 0.5s;
+  display: block;
+  width: 1320px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease, box-shadow 0.5s;
 }
 
-.tour_video a:hover img{
-    transform: scale(1.01);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+.tour_video a:hover img {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .tour_video a img {
-    width: 1320px;
-    border-radius: 30px;
+  width: 1320px;
+  border-radius: 30px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    border: 0x;
+    width: 100%;
+    height: auto;
+  }
+
+  .tour_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+  }
+
+  .video-link {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .tour_video a img {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: auto;
+    margin-left: 25px;
+  }
 }
