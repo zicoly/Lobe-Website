@@ -3,11 +3,13 @@ const dropdownMenu = document.getElementById("dropdownMenu");
 const dropdownItems = document.querySelectorAll("#dropdownMenu a");
 
 hamburgerButton.addEventListener("click", () => {
-  dropdownMenu.style.display =
-    dropdownMenu.style.display === "none" ? "block" : "none";
-  // Toggle hamburger icon
-  hamburgerButton.innerHTML =
-    dropdownMenu.style.display === "none" ? "&#9776;" : "&#10006;";
+  if (window.innerWidth <= 768) {
+    dropdownMenu.style.display =
+      dropdownMenu.style.display === "none" ? "block" : "none";
+    // Toggle hamburger icon
+    hamburgerButton.innerHTML =
+      dropdownMenu.style.display === "none" ? "&#9776;" : "&#10006;";
+  }
 });
 
 dropdownItems.forEach((item) => {
@@ -23,8 +25,7 @@ dropdownItems.forEach((item) => {
     });
     // Add 'active' class to the clicked dropdown item
     item.classList.add("active");
-    
-});
+  });
 });
 
 // Desktop functionality
@@ -41,3 +42,17 @@ desktopNavItems.forEach(item => {
         item.classList.add("active");
     });
 });
+
+// Ensure the dropdown menu is hidden on larger screens
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    dropdownMenu.style.display = 'none';
+    hamburgerButton.innerHTML = "&#9776;";
+  }
+});
+
+// Initial check on page load
+if (window.innerWidth > 768) {
+  dropdownMenu.style.display = 'none';
+  hamburgerButton.innerHTML = "&#9776;";
+}
